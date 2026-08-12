@@ -22,6 +22,7 @@ permission needed.
 | Folder | Contents |
 |---|---|
 | [`notebooks/`](notebooks/) | The four student notebooks worked through during the class |
+| [`challenges/`](challenges/) | The three Satellite Challenge notebooks. Each team picks one for the final hour |
 | [`final-assessment/`](final-assessment/) | The take-home assessment materials |
 
 ## The four notebooks
@@ -35,6 +36,20 @@ Each notebook takes roughly 20 to 30 minutes in class. Cells marked
 | 2 | [`02_reading_the_land_STUDENT.ipynb`](notebooks/02_reading_the_land_STUDENT.ipynb) | Turn satellite pictures into hectares and measure the open water inside Portmore |
 | 3 | [`03_melissa_and_shoreline_STUDENT.ipynb`](notebooks/03_melissa_and_shoreline_STUDENT.ipynb) | Measure the hectares of severe vegetation loss Hurricane Melissa caused around New Hope, Westmoreland |
 | 4 | [`04_heat_machines_prediction_STUDENT.ipynb`](notebooks/04_heat_machines_prediction_STUDENT.ipynb) | Read 45 years of Kingston temperature and find the hottest day of July 2026 |
+
+## The Satellite Challenge
+
+The final hour of the day. Each team picks **one** of the three challenges
+in [`challenges/`](challenges/) and presents the answer.
+
+| | Challenge | Question |
+|---|---|---|
+| A | [`Challenge_A_Storm_Bill.ipynb`](challenges/Challenge_A_Storm_Bill.ipynb) | What did the vegetation damage around New Hope cost, in Jamaican dollars? |
+| B | [`Challenge_B_Solar_Scout.ipynb`](challenges/Challenge_B_Solar_Scout.ipynb) | Of three candidate sites, which should get the solar farm, and how many homes could it power? |
+| C | [`Challenge_C_Green_Score.ipynb`](challenges/Challenge_C_Green_Score.ipynb) | How much living green per person do two Jamaican communities have, against the WHO minimum? |
+
+See [`challenges/README.md`](challenges/README.md) for the rules and the
+five-minute presentation format.
 
 ## How to run the notebooks
 
