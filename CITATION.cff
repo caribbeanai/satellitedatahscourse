@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite these teaching materials when reusing them."
+type: software
+title: "Eyes in the Sky: Satellite Data Analysis for Jamaica"
+authors:
+  - family-names: Dunkley
+    given-names: Adrian
+    affiliation: "Physicist, Climate Studies Group, Mona"
+repository-code: "https://github.com/caribbeanai/satellitedatahscourse"
+url: "https://github.com/caribbeanai/satellitedatahscourse"
+license: MIT
+version: 1.1.0
+date-released: 2026-10-25
+abstract: "Original satellite-data workshop and an additional four-week course with lectures, executable laboratories, assessments and reproducible Python tools."

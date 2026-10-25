@@ -1,89 +1,62 @@
 # Eyes in the Sky: Satellite Data Analysis for Jamaica
 
-Course materials for **Eyes in the Sky**, a one-day satellite data science
-workshop for Jamaican high school students, prepared by
-**Adrian Dunkley**, Climate Studies Group Mona, Faculty of Science and
-Technology, University of the West Indies.
+**Prepared by Adrian Dunkley, Physicist, Climate Studies Group, Mona.**
 
-Students use free, open satellite data (Sentinel-2 from the European Space
-Agency, hosted on Amazon Web Services) and NASA POWER climate records to
-measure real things over Jamaica: the vegetation around their community,
-the water inside Portmore, the hectares Hurricane Melissa flattened around
-New Hope, and 45 years of heat over Kingston. No API keys, no fees, no
-permission needed.
+Satellite-data teaching materials for Jamaican students, with the original one-day workshop and an additional four-week course. Students investigate vegetation, open water, candidate storm change, solar resources and temperature, then learn to document data quality, quantify sensitivity and evaluate forecasts.
 
-## Links
+## Start here
 
-- **Course sign up:** https://adriandunkley.net/courses/eyes-in-the-sky-high-school.html
-- **Final assessment:** https://adriandunkley.net/courses/eyes-in-the-sky-high-school-exam.html
-
-## What is in this repository
-
-| Folder | Contents |
+| Programme | Materials |
 |---|---|
-| [`notebooks/`](notebooks/) | The four student notebooks worked through during the class |
-| [`challenges/`](challenges/) | The three Satellite Challenge notebooks. Each team picks one for the final hour |
-| [`final-assessment/`](final-assessment/) | The take-home assessment materials |
+| Original workshop | [Four student notebooks](notebooks/), with marked learner tasks |
+| Team challenges | [Storm Bill, Solar Scout and Green Score](challenges/) |
+| Additional four weeks | [Course guide, lectures, notebooks, assignments and instructor answers](extension-4-weeks/) |
+| Original assessment | [Assessment information](final-assessment/) |
 
-## The four notebooks
+The extension follows this sequence:
 
-Each notebook takes roughly 20 to 30 minutes in class. Cells marked
-**YOUR TURN** have small gaps to fill in; everything else runs as given.
-
-| # | Notebook | Mission |
+| Week | Main question | New laboratory |
 |---|---|---|
-| 1 | [`01_first_light_STUDENT.ipynb`](notebooks/01_first_light_STUDENT.ipynb) | Find your community from space and count the clear satellite views of Treasure Beach in 2025 |
-| 2 | [`02_reading_the_land_STUDENT.ipynb`](notebooks/02_reading_the_land_STUDENT.ipynb) | Turn satellite pictures into hectares and measure the open water inside Portmore |
-| 3 | [`03_melissa_and_shoreline_STUDENT.ipynb`](notebooks/03_melissa_and_shoreline_STUDENT.ipynb) | Measure the hectares of severe vegetation loss Hurricane Melissa caused around New Hope, Westmoreland |
-| 4 | [`04_heat_machines_prediction_STUDENT.ipynb`](notebooks/04_heat_machines_prediction_STUDENT.ipynb) | Read 45 years of Kingston temperature and find the hottest day of July 2026 |
+| 1 | Which pixels can you trust? | [05: Quality and measurement](extension-4-weeks/notebooks/05_quality_and_measurement.ipynb) |
+| 2 | Does the change survive different choices? | [06: Change and uncertainty](extension-4-weeks/notebooks/06_change_and_uncertainty.ipynb) |
+| 3 | Would the forecast work at issue time? | [07: Forecasts and validation](extension-4-weeks/notebooks/07_forecasts_and_validation.ipynb) |
+| 4 | What decision does the evidence support? | [08: Capstone and reproducibility](extension-4-weeks/notebooks/08_capstone_and_reproducibility.ipynb) |
 
-## The Satellite Challenge
+Allow one three-hour class plus approximately three hours of independent work each week. The course guide explains learning outcomes, prerequisites and submissions. Lecture notes include equations, diagrams, worked examples and classroom prompts.
 
-The final hour of the day. Each team picks **one** of the three challenges
-in [`challenges/`](challenges/) and presents the answer.
+## Run the materials
 
-| | Challenge | Question |
-|---|---|---|
-| A | [`Challenge_A_Storm_Bill.ipynb`](challenges/Challenge_A_Storm_Bill.ipynb) | What did the vegetation damage around New Hope cost, in Jamaican dollars? |
-| B | [`Challenge_B_Solar_Scout.ipynb`](challenges/Challenge_B_Solar_Scout.ipynb) | Of three candidate sites, which should get the solar farm, and how many homes could it power? |
-| C | [`Challenge_C_Green_Score.ipynb`](challenges/Challenge_C_Green_Score.ipynb) | How much living green per person do two Jamaican communities have, against the WHO minimum? |
-
-See [`challenges/README.md`](challenges/README.md) for the rules and the
-five-minute presentation format.
-
-## How to run the notebooks
-
-The easiest path is **Google Colab**, which needs no installation:
-
-1. Open [colab.research.google.com](https://colab.research.google.com).
-2. Choose `File` then `Upload notebook`, and pick one of the `.ipynb` files
-   from the `notebooks/` folder.
-3. Run the cells from the top.
-
-The first two cells install the required packages and load the toolkit;
-after that, work through the mission.
-
-Alternatively, run locally with JupyterLab:
+Use Python 3.11 or 3.12. From a local checkout:
 
 ```bash
-pip install jupyterlab rasterio requests imageio pandas scikit-learn matplotlib pillow
-jupyter lab
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-lock.txt
+python -m jupyterlab
 ```
 
-## Data and credits
+On Windows activate with `.venv\Scripts\activate`. [Colab links and setup guidance](extension-4-weeks/README.md) are provided for the four new labs. Their default examples use explicitly synthetic teaching data and run without live requests after installation. Each includes an independent investigation; students must do more than rerun the example.
 
-- **Sentinel-2** imagery: European Space Agency, hosted on the Registry of
-  Open Data on AWS by Element 84.
-- **NASA POWER** climate records: NASA Langley Research Center, MERRA-2
-  reanalysis.
+Optional Sentinel-2 and NASA POWER sections retrieve observations and preserve metadata. They raise errors when acquisition fails. Their outputs must be labelled separately from synthetic examples. The original workshop notebooks need learners to complete the marked gaps and use live services.
 
-Both are free to use, with no account or key required.
+## Code, data and validation
 
-## Licence
+[Reusable Python tools](python/eo_course.py) handle calibration, masks, support counts, area, change sensitivity, calendar-aware lags, chronological model comparisons and provenance. [Sources](extension-4-weeks/SOURCES.md) link the primary product and software documentation. The MIT licence applies to original course code/text; provider datasets and third-party packages retain their own terms.
 
-Course materials are released under the [MIT Licence](LICENSE).
+```bash
+python -m pytest -q
+python scripts/validate_extension.py
+```
 
----
+The validation command runs the new default labs in separate Jupyter kernels. On restricted hosts without kernel sockets, use the explicitly labelled fallback `python scripts/validate_extension.py --plain-python`, which executes plain-Python cells in separate processes. [GitHub Actions](.github/workflows/course-checks.yml) checks tests and notebooks after pushes. [Release review](extension-4-weeks/REVIEW.md) and [validation record](extension-4-weeks/VALIDATION.md) explain what was checked and what still requires live-data verification.
 
-*Prepared by Adrian Dunkley, Climate Studies Group Mona, Faculty of Science
-and Technology, University of the West Indies.*
+Index thresholds identify candidate spectral patterns. They do not independently establish crop loss, causal storm damage, compensation, public access to green space or operational forecast skill. The extension teaches the additional evidence those interpretations need.
+
+## Original workshop links
+
+- [Course page](https://adriandunkley.net/courses/eyes-in-the-sky-high-school.html)
+- [Original assessment page](https://adriandunkley.net/courses/eyes-in-the-sky-high-school-exam.html)
+
+## Citation and licence
+
+Use [CITATION.cff](CITATION.cff) to credit Adrian Dunkley. Original materials remain under the [MIT licence](LICENSE).

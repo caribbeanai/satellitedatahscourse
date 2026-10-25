@@ -1,0 +1,38 @@
+{
+  "python": "3.12.14",
+  "data_kind": "synthetic",
+  "execution_mode": "isolated Python processes",
+  "live_services_tested": false,
+  "notebooks": [
+    {
+      "path": "extension-4-weeks/notebooks/05_quality_and_measurement.ipynb",
+      "status": "passed",
+      "code_cells": 5
+    },
+    {
+      "path": "extension-4-weeks/notebooks/06_change_and_uncertainty.ipynb",
+      "status": "passed",
+      "code_cells": 6
+    },
+    {
+      "path": "extension-4-weeks/notebooks/07_forecasts_and_validation.ipynb",
+      "status": "passed",
+      "code_cells": 6
+    },
+    {
+      "path": "extension-4-weeks/notebooks/08_capstone_and_reproducibility.ipynb",
+      "status": "passed",
+      "code_cells": 6
+    }
+  ],
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8",
+    "scikit-learn": "1.8.0",
+    "rasterio": "1.4.3",
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.2"
+  },
+  "original_shared_toolkits_syntax_checked": 7
+}

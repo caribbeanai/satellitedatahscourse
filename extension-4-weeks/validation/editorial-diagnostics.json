@@ -1,0 +1,665 @@
+{
+  "sha256": "ba769e2786622104379ac882f50158c52830184075aa2ad9bf239924f77d1079",
+  "metrics": {
+    "word_count": 3484,
+    "sentence_count": 242,
+    "sentence_mean": 14.380165289256198,
+    "sentence_median": 13.0,
+    "sentence_sd": 8.167089303442715,
+    "sentence_cv": 0.5679412676532003,
+    "opening_hhi": 0.005225052933542792,
+    "opening_entropy_normalized": 0.9909604667399967,
+    "marker_rate_per_1000": 0.574052812858783,
+    "repetition_3gram": 0.024985640436530728,
+    "repetition_4gram": 0.011490950876185005,
+    "repetition_5gram": 0.007471264367816092
+  },
+  "terms": {
+    "delve": {
+      "count": 0,
+      "per_1000": 0.0
+    },
+    "delves": {
+      "count": 0,
+      "per_1000": 0.0
+    },
+    "delving": {
+      "count": 0,
+      "per_1000": 0.0
+    },
+    "intricate": {
+      "count": 0,
+      "per_1000": 0.0
+    },
+    "pivotal": {
+      "count": 0,
+      "per_1000": 0.0
+    },
+    "realm": {
+      "count": 0,
+      "per_1000": 0.0
+    },
+    "showcasing": {
+      "count": 0,
+      "per_1000": 0.0
+    },
+    "comprehensive": {
+      "count": 0,
+      "per_1000": 0.0
+    },
+    "underscores": {
+      "count": 0,
+      "per_1000": 0.0
+    },
+    "crucial": {
+      "count": 0,
+      "per_1000": 0.0
+    },
+    "notably": {
+      "count": 0,
+      "per_1000": 0.0
+    },
+    "additionally": {
+      "count": 0,
+      "per_1000": 0.0
+    },
+    "potential": {
+      "count": 0,
+      "per_1000": 0.0
+    },
+    "findings": {
+      "count": 0,
+      "per_1000": 0.0
+    },
+    "across": {
+      "count": 2,
+      "per_1000": 0.574052812858783
+    },
+    "within": {
+      "count": 0,
+      "per_1000": 0.0
+    }
+  },
+  "phrase_hits": {},
+  "repeated_openings": [
+    {
+      "opening": "it is",
+      "count": 5
+    },
+    {
+      "opening": "these are",
+      "count": 3
+    },
+    {
+      "opening": "the course",
+      "count": 3
+    },
+    {
+      "opening": "keep the",
+      "count": 3
+    },
+    {
+      "opening": "explain the",
+      "count": 2
+    },
+    {
+      "opening": "if the",
+      "count": 2
+    },
+    {
+      "opening": "compare the",
+      "count": 2
+    },
+    {
+      "opening": "class activity",
+      "count": 2
+    },
+    {
+      "opening": "use the",
+      "count": 2
+    },
+    {
+      "opening": "read s",
+      "count": 2
+    },
+    {
+      "opening": "revisit original",
+      "count": 2
+    },
+    {
+      "opening": "for a",
+      "count": 2
+    },
+    {
+      "opening": "it does",
+      "count": 2
+    },
+    {
+      "opening": "in the",
+      "count": 2
+    },
+    {
+      "opening": "do not",
+      "count": 2
+    },
+    {
+      "opening": "the default",
+      "count": 2
+    },
+    {
+      "opening": "the provided",
+      "count": 2
+    }
+  ],
+  "repeated_ngrams": {
+    "3": [
+      {
+        "phrase": "it is not",
+        "count": 5
+      },
+      {
+        "phrase": "prepared by adrian",
+        "count": 4
+      },
+      {
+        "phrase": "by adrian dunkley",
+        "count": 4
+      },
+      {
+        "phrase": "adrian dunkley physicist",
+        "count": 4
+      },
+      {
+        "phrase": "dunkley physicist climate",
+        "count": 4
+      },
+      {
+        "phrase": "physicist climate studies",
+        "count": 4
+      },
+      {
+        "phrase": "climate studies group",
+        "count": 4
+      },
+      {
+        "phrase": "studies group mona",
+        "count": 4
+      },
+      {
+        "phrase": "group mona learning",
+        "count": 4
+      },
+      {
+        "phrase": "mona learning outcomes",
+        "count": 4
+      },
+      {
+        "phrase": "learning outcomes and",
+        "count": 4
+      },
+      {
+        "phrase": "it does not",
+        "count": 4
+      },
+      {
+        "phrase": "is a teaching",
+        "count": 3
+      },
+      {
+        "phrase": "s in the",
+        "count": 3
+      },
+      {
+        "phrase": "mermaid flowchart td",
+        "count": 3
+      },
+      {
+        "phrase": "flowchart td a",
+        "count": 3
+      },
+      {
+        "phrase": "this week you",
+        "count": 3
+      },
+      {
+        "phrase": "week you will",
+        "count": 3
+      },
+      {
+        "phrase": "is not a",
+        "count": 3
+      },
+      {
+        "phrase": "should be able",
+        "count": 2
+      },
+      {
+        "phrase": "be able to",
+        "count": 2
+      },
+      {
+        "phrase": "able to explain",
+        "count": 2
+      },
+      {
+        "phrase": "how much of",
+        "count": 2
+      },
+      {
+        "phrase": "claim about the",
+        "count": 2
+      },
+      {
+        "phrase": "near infrared reflectance",
+        "count": 2
+      },
+      {
+        "phrase": "scale and offset",
+        "count": 2
+      },
+      {
+        "phrase": "compare the resulting",
+        "count": 2
+      },
+      {
+        "phrase": "observed area and",
+        "count": 2
+      },
+      {
+        "phrase": "area divided by",
+        "count": 2
+      },
+      {
+        "phrase": "observed eligible area",
+        "count": 2
+      }
+    ],
+    "4": [
+      {
+        "phrase": "prepared by adrian dunkley",
+        "count": 4
+      },
+      {
+        "phrase": "by adrian dunkley physicist",
+        "count": 4
+      },
+      {
+        "phrase": "adrian dunkley physicist climate",
+        "count": 4
+      },
+      {
+        "phrase": "dunkley physicist climate studies",
+        "count": 4
+      },
+      {
+        "phrase": "physicist climate studies group",
+        "count": 4
+      },
+      {
+        "phrase": "climate studies group mona",
+        "count": 4
+      },
+      {
+        "phrase": "studies group mona learning",
+        "count": 4
+      },
+      {
+        "phrase": "group mona learning outcomes",
+        "count": 4
+      },
+      {
+        "phrase": "mona learning outcomes and",
+        "count": 4
+      },
+      {
+        "phrase": "mermaid flowchart td a",
+        "count": 3
+      },
+      {
+        "phrase": "this week you will",
+        "count": 3
+      },
+      {
+        "phrase": "it is not a",
+        "count": 3
+      },
+      {
+        "phrase": "should be able to",
+        "count": 2
+      },
+      {
+        "phrase": "be able to explain",
+        "count": 2
+      },
+      {
+        "phrase": "ask a partner to",
+        "count": 2
+      },
+      {
+        "phrase": "s s in the",
+        "count": 2
+      },
+      {
+        "phrase": "s s sources md",
+        "count": 2
+      },
+      {
+        "phrase": "product has a seven",
+        "count": 2
+      },
+      {
+        "phrase": "has a seven day",
+        "count": 2
+      }
+    ],
+    "5": [
+      {
+        "phrase": "prepared by adrian dunkley physicist",
+        "count": 4
+      },
+      {
+        "phrase": "by adrian dunkley physicist climate",
+        "count": 4
+      },
+      {
+        "phrase": "adrian dunkley physicist climate studies",
+        "count": 4
+      },
+      {
+        "phrase": "dunkley physicist climate studies group",
+        "count": 4
+      },
+      {
+        "phrase": "physicist climate studies group mona",
+        "count": 4
+      },
+      {
+        "phrase": "climate studies group mona learning",
+        "count": 4
+      },
+      {
+        "phrase": "studies group mona learning outcomes",
+        "count": 4
+      },
+      {
+        "phrase": "group mona learning outcomes and",
+        "count": 4
+      },
+      {
+        "phrase": "should be able to explain",
+        "count": 2
+      },
+      {
+        "phrase": "product has a seven day",
+        "count": 2
+      }
+    ]
+  },
+  "rhetorical_roles": [
+    "method",
+    "other",
+    "other",
+    "result",
+    "other",
+    "other",
+    "other",
+    "method",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "limitation",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "result",
+    "result",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "limitation",
+    "limitation",
+    "other",
+    "result",
+    "result",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "method",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "limitation",
+    "result",
+    "other",
+    "result",
+    "other",
+    "other",
+    "other",
+    "other",
+    "limitation",
+    "other",
+    "other",
+    "other",
+    "method",
+    "other",
+    "method",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "result",
+    "other",
+    "other",
+    "other",
+    "result",
+    "method",
+    "result",
+    "other",
+    "method",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "limitation",
+    "other",
+    "other",
+    "other",
+    "other",
+    "method",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "limitation",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "method",
+    "other",
+    "other",
+    "other",
+    "method",
+    "limitation",
+    "method",
+    "other",
+    "method",
+    "other",
+    "method",
+    "other",
+    "other",
+    "method",
+    "other",
+    "method",
+    "other",
+    "method",
+    "other",
+    "result",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "method",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "method",
+    "other",
+    "method",
+    "result",
+    "method",
+    "other",
+    "method",
+    "other",
+    "other",
+    "method",
+    "other",
+    "other",
+    "method",
+    "other",
+    "other",
+    "limitation",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "result",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "limitation",
+    "other",
+    "result",
+    "other",
+    "other",
+    "result",
+    "method",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other",
+    "other"
+  ],
+  "role_transitions": {
+    "method -> other": 21,
+    "other -> other": 155,
+    "other -> result": 10,
+    "result -> other": 10,
+    "other -> method": 19,
+    "other -> limitation": 8,
+    "limitation -> other": 7,
+    "result -> result": 2,
+    "limitation -> limitation": 1,
+    "limitation -> result": 1,
+    "result -> method": 3,
+    "method -> result": 2,
+    "method -> limitation": 1,
+    "limitation -> method": 1
+  },
+  "limits": [
+    "Editorial diagnostics, not authorship evidence or AI probability.",
+    "Regex sentence and role heuristics are not syntactic parsing.",
+    "Inspect extraction; abbreviated, mathematical and unordered passage text can distort counts.",
+    "Marker list is a small review vocabulary, not the complete published marker sets."
+  ],
+  "input": "/workspace/scratch/4dd3d084e976/lecture_prose.txt"
+}
