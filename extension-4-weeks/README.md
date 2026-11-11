@@ -17,6 +17,18 @@ Each week contains a three-hour class and approximately three hours of independe
 
 [Assignments and marking rubric](ASSESSMENT.md) · [Instructor guide and worked answers](instructor/GUIDE.md) · [Verified sources](SOURCES.md) · [Review of the original materials](REVIEW.md).
 
+## Satellite physics labs
+
+These optional labs fit after the measurement, forecast and public decision lessons. Each pairs a physical equation with two Jamaican teaching scenarios and a calculation students can change and rerun.
+
+| Lab | What you will calculate | Scenario and submission |
+|---|---|---|
+| [09 · From infrared light to temperature](notebooks/09_infrared_physics.ipynb) | Planck radiance, brightness temperature and the effect of emissivity | Compare a Kingston school roof with its shade trees. Explain what equal infrared readings offshore from Portland tell you about rain. |
+| [10 · From storm rain rates to water volume](notebooks/10_rainfall_and_runoff.ipynb) | Area-weighted rainfall depth, water volume, runoff sensitivity and missing coverage | Prepare a basin water budget for a synthetic storm near Black River. Show what changes when a heavy interval is missing. |
+| [11 · Follow a moving rain band](notebooks/11_advection_and_forecast_limits.ipynb) | Wind transport, a Courant limit and forecast error against persistence | Move a rain band along an idealised south-coast strip. Compare the errors when the wind speed or direction changes. |
+
+[Worked answers and marking guidance](instructor/PHYSICS.md) give expected values and questions for discussion.
+
 ## Run locally
 
 From the repository root, use Python 3.11 or 3.12:
@@ -30,7 +42,7 @@ python -m jupyterlab
 
 On Windows activate with `.venv\Scripts\activate`. Open a notebook in this folder and run its cells in order. Every default lesson runs on **explicitly synthetic teaching data**, with no network, credentials or downloads. The plotted numbers are not observations of Jamaica. Each lesson has complete worked examples followed by investigations where students edit parameters and explain the result. Independent assignments require additional work beyond running the examples.
 
-To run on Colab, use the links below. The setup cell fetches this public repository only when the course module is absent. Review the code before running downloads.
+To run on Colab, use the links below. In Labs 05–08 the setup cell fetches the public repository when the course module is absent. Review the code before running downloads. Labs 09–11 run as standalone notebooks.
 
 | Laboratory | Open in Colab |
 |---|---|
@@ -38,6 +50,9 @@ To run on Colab, use the links below. The setup cell fetches this public reposit
 | 06 | [Change detection](https://colab.research.google.com/github/caribbeanai/satellitedatahscourse/blob/main/extension-4-weeks/notebooks/06_change_and_uncertainty.ipynb) |
 | 07 | [Forecast validation](https://colab.research.google.com/github/caribbeanai/satellitedatahscourse/blob/main/extension-4-weeks/notebooks/07_forecasts_and_validation.ipynb) |
 | 08 | [Capstone](https://colab.research.google.com/github/caribbeanai/satellitedatahscourse/blob/main/extension-4-weeks/notebooks/08_capstone_and_reproducibility.ipynb) |
+| 09 | [Infrared physics](https://colab.research.google.com/github/caribbeanai/satellitedatahscourse/blob/main/extension-4-weeks/notebooks/09_infrared_physics.ipynb) |
+| 10 | [Rainfall and runoff](https://colab.research.google.com/github/caribbeanai/satellitedatahscourse/blob/main/extension-4-weeks/notebooks/10_rainfall_and_runoff.ipynb) |
+| 11 | [Rain-band transport](https://colab.research.google.com/github/caribbeanai/satellitedatahscourse/blob/main/extension-4-weeks/notebooks/11_advection_and_forecast_limits.ipynb) |
 
 ## Move from demonstration to observations
 

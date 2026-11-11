@@ -11,6 +11,7 @@ Satellite-data teaching materials for Jamaican students, with the original one-d
 | Original workshop | [Four student notebooks](notebooks/), with marked learner tasks |
 | Team challenges | [Storm Bill, Solar Scout and Green Score](challenges/) |
 | Additional four weeks | [Course guide, lectures, notebooks, assignments and instructor answers](extension-4-weeks/) |
+| Satellite physics labs | [Thermal radiation, rainfall volume and rain-band motion](extension-4-weeks/#satellite-physics-labs) |
 | Original assessment | [Assessment information](final-assessment/) |
 
 The extension follows this sequence:
@@ -35,7 +36,7 @@ python -m pip install -r requirements-lock.txt
 python -m jupyterlab
 ```
 
-On Windows activate with `.venv\Scripts\activate`. [Colab links and setup guidance](extension-4-weeks/README.md) are provided for the four new labs. Their default examples use explicitly synthetic teaching data and run without live requests after installation. Each includes an independent investigation; students must do more than rerun the example.
+On Windows activate with `.venv\Scripts\activate`. [Colab links and setup guidance](extension-4-weeks/README.md) cover the four core labs and the three optional physics labs. Their default examples use explicitly synthetic teaching data and run without live requests after installation. Each lab includes an investigation that asks students to change inputs and explain the result.
 
 Optional Sentinel-2 and NASA POWER sections retrieve observations and preserve metadata. They raise errors when acquisition fails. Their outputs must be labelled separately from synthetic examples. The original workshop notebooks need learners to complete the marked gaps and use live services.
 
